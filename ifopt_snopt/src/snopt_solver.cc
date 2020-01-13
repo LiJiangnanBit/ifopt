@@ -53,7 +53,7 @@ SnoptSolver::Solve (Problem& ref)
 
 
   // interface changed with snopt version 7.6
-#ifdef SNOPT76
+#ifndef SNOPT76
   int nS = 0; // number of super-basic variables (not relevant for cold start)
   int nInf;   // nInf : number of constraints outside of the bounds
   double sInf;// sInf : sum of infeasibilities

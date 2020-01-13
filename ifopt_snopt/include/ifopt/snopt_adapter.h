@@ -27,7 +27,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #ifndef IFOPT_INCLUDE_OPT_SNOPT_ADAPTER_H_
 #define IFOPT_INCLUDE_OPT_SNOPT_ADAPTER_H_
 
-#include <snoptProblem.hpp>
+#include <snopt/snoptProblem.hpp>
 
 #include <ifopt/problem.h>
 
@@ -73,7 +73,7 @@ private:
 
 // additional variables as Snopt76 base class doesn't have them, not really
 // necessary but to keep the same structure of the original SnoptAdapter
-#ifdef SNOPT76
+#ifndef SNOPT76
 
 public:
   int     jacComputed = 0;

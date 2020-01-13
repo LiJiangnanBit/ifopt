@@ -1,24 +1,4 @@
-# Findsnopt.cmake
-# ---------
-#
-# Basic helper script to locate the header files and libraries of SNOPT.
-# Web: http://ampl.com/products/solvers/solvers-we-sell/snopt/
-# Copyright (c) 2018, Alexander W. Winkler. All rights reserved.
-#
-#
-# Result variables
-# ^^^^^^^^^^^^^^^^
-#
-# This module will set the following variables in your project:
-#   SNOPT_INCLUDE_DIRS - path to public SNOPT include (.h) files
-#   SNOPT_LIBRARIES    - path to all snopt libraries
-#   SNOPT_v76          - true if snopt version >= v7.6
-#   SNOPT_FOUND        - true if found
-#
-#=============================================================================
-
-
-set(SNOPT_DIR $ENV{SNOPT_DIR})
+set(SNOPT_DIR "/usr/local")
 set(snopt_v76 FALSE) # set true if snopt version >= v7.6
 
 if(IS_DIRECTORY ${SNOPT_DIR}/include)

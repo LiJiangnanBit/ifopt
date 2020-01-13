@@ -118,7 +118,8 @@ SnoptAdapter::Init ()
     }
   }
 
-  setUserFun(&SnoptAdapter::ObjectiveAndConstraintFct);
+  //setUserFun(&SnoptAdapter::ObjectiveAndConstraintFct);
+  this->initialize("print_file.out",1);
 }
 
 void
